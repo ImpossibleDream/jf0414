@@ -1,4 +1,4 @@
-﻿/*using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -28,7 +28,7 @@ namespace jf0414
             bool hasOK = cities.Contains(city);
             Console.WriteLine("The array {0} contain '{1}'.\n", hasOK ? "does" : "does not", city);
 
-            //ThenBy   (sort?)
+            //ThenBy   (sort by the legth?)
             string[] zones = { "Sanya", "Weizhoudao", "ChiangMai", "Bangkok", "Phuket" };
             IEnumerable<string> query = zones.OrderBy(zone => zone.Length).ThenBy(zone => zone);
             foreach (string zone in query)
@@ -37,4 +37,4 @@ namespace jf0414
             }
         }
     }
-}*/
+}
